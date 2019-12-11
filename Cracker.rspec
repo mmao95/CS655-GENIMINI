@@ -1,0 +1,132 @@
+<rspec xmlns="http://www.geni.net/resources/rspec/3" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:tour="http://www.protogeni.net/resources/rspec/ext/apt-tour/1" xmlns:jacks="http://www.protogeni.net/resources/rspec/ext/jacks/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3    http://www.geni.net/resources/rspec/3/request.xsd" type="request">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="server" component_manager_id="urn:publicid:IDN+instageni.umkc.edu+authority+cm" component_id="urn:publicid:IDN+instageni.umkc.edu+node+pc3" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19990" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+    <sliver_type name="default-vm"/>
+    <services>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27015" username="psohal"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27015" username="wuhn1996"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27015" username="matta"/>
+      <emulab:console server="pc3.instageni.umkc.edu"/>
+    </services>
+    <interface client_id="interface-1" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19994" mac_address="027c2374221c">
+      <ip address="10.10.1.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-2" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19996" mac_address="020fe747c9d0">
+      <ip address="10.10.2.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-5" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+20000" mac_address="02f36fb1ea1e">
+      <ip address="10.10.3.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-7" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+20003" mac_address="02ea1953f3b7">
+      <ip address="10.10.4.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-8" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+20005" mac_address="02911bece37c">
+      <ip address="10.10.5.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm3-20" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
+    <host name="server.Cracker.ch-geni-net.instageni.umkc.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-1" component_manager_id="urn:publicid:IDN+instageni.umkc.edu+authority+cm" component_id="urn:publicid:IDN+instageni.umkc.edu+node+pc3" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19985" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+    <sliver_type name="default-vm"/>
+    <services>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27010" username="psohal"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27010" username="wuhn1996"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27010" username="matta"/>
+      <emulab:console server="pc3.instageni.umkc.edu"/>
+    </services>
+    <interface client_id="interface-3" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19997" mac_address="02ca5cfcf5c2">
+      <ip address="10.10.2.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm3-13" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
+    <host name="node-1.Cracker.ch-geni-net.instageni.umkc.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-2" component_manager_id="urn:publicid:IDN+instageni.umkc.edu+authority+cm" component_id="urn:publicid:IDN+instageni.umkc.edu+node+pc3" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19986" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+    <sliver_type name="default-vm"/>
+    <services>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27011" username="psohal"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27011" username="wuhn1996"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27011" username="matta"/>
+      <emulab:console server="pc3.instageni.umkc.edu"/>
+    </services>
+    <interface client_id="interface-0" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19993" mac_address="027733b542af">
+      <ip address="10.10.1.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm3-16" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
+    <host name="node-2.Cracker.ch-geni-net.instageni.umkc.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-3" component_manager_id="urn:publicid:IDN+instageni.umkc.edu+authority+cm" component_id="urn:publicid:IDN+instageni.umkc.edu+node+pc3" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19987" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+    <sliver_type name="default-vm"/>
+    <services>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27012" username="psohal"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27012" username="wuhn1996"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27012" username="matta"/>
+      <emulab:console server="pc3.instageni.umkc.edu"/>
+    </services>
+    <interface client_id="interface-9" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+20006" mac_address="021986229577">
+      <ip address="10.10.5.2" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm3-17" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
+    <host name="node-3.Cracker.ch-geni-net.instageni.umkc.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-4" component_manager_id="urn:publicid:IDN+instageni.umkc.edu+authority+cm" component_id="urn:publicid:IDN+instageni.umkc.edu+node+pc3" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19988" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+    <sliver_type name="default-vm"/>
+    <services>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27013" username="psohal"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27013" username="wuhn1996"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27013" username="matta"/>
+      <emulab:console server="pc3.instageni.umkc.edu"/>
+    </services>
+    <interface client_id="interface-4" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19999" mac_address="02ca92ad1ed2">
+      <ip address="10.10.3.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm3-18" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
+    <host name="node-4.Cracker.ch-geni-net.instageni.umkc.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-5" component_manager_id="urn:publicid:IDN+instageni.umkc.edu+authority+cm" component_id="urn:publicid:IDN+instageni.umkc.edu+node+pc3" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19989" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+    <sliver_type name="default-vm"/>
+    <services>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27014" username="psohal"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27014" username="wuhn1996"/>
+      <login authentication="ssh-keys" hostname="pc3.instageni.umkc.edu" port="27014" username="matta"/>
+      <emulab:console server="pc3.instageni.umkc.edu"/>
+    </services>
+    <interface client_id="interface-6" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+20002" mac_address="02abcd9cff03">
+      <ip address="10.10.4.1" netmask="255.255.255.0" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm3-19" hardware_type="pcvm" disk_image="emulab-ops/UBUNTU18-64-STD:0"/>
+    <host name="node-5.Cracker.ch-geni-net.instageni.umkc.edu"/>
+  </node>
+  <link client_id="link-0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19992">
+    <interface_ref client_id="interface-0" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19993"/>
+    <interface_ref client_id="interface-1" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19994"/>
+    <component_manager name="urn:publicid:IDN+instageni.umkc.edu+authority+cm"/>
+  </link>
+  <link client_id="link-1" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19995">
+    <interface_ref client_id="interface-2" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19996"/>
+    <interface_ref client_id="interface-3" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19997"/>
+    <component_manager name="urn:publicid:IDN+instageni.umkc.edu+authority+cm"/>
+  </link>
+  <link client_id="link-2" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19998">
+    <interface_ref client_id="interface-4" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+19999"/>
+    <interface_ref client_id="interface-5" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+20000"/>
+    <component_manager name="urn:publicid:IDN+instageni.umkc.edu+authority+cm"/>
+  </link>
+  <link client_id="link-3" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+20001">
+    <interface_ref client_id="interface-6" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+20002"/>
+    <interface_ref client_id="interface-7" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+20003"/>
+    <component_manager name="urn:publicid:IDN+instageni.umkc.edu+authority+cm"/>
+  </link>
+  <link client_id="link-4" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+20004">
+    <interface_ref client_id="interface-8" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+20005"/>
+    <interface_ref client_id="interface-9" component_id="urn:publicid:IDN+instageni.umkc.edu+interface+pc3:lo0" sliver_id="urn:publicid:IDN+instageni.umkc.edu+sliver+20006"/>
+    <component_manager name="urn:publicid:IDN+instageni.umkc.edu+authority+cm"/>
+  </link>
+  <rs:site_info xmlns:rs="http://www.protogeni.net/resources/rspec/ext/site-info/1">
+    <rs:location country="" latitude="39.033669" longitude="-94.576278"/>
+  </rs:site_info>
+</rspec>
