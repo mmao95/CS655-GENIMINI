@@ -35,24 +35,24 @@ public class Server {
     }
 
     private static String to52(long data) {
-	   String str = "ABCDEFGHIJKLNMOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-       String s = "";
-       if(data==0)
-       {
-         return str.charAt(0)+"";
-       }
-       while(data > 0){
-           if(data < 52){
-               s = str.charAt((int)data) + s;
-               data = 0;
-           }else{
-               long r = data%52L;
-               s = str.charAt((int)r) + s;
-               data  = (data-r)/52;
-           }
-       }
-       return s;
-  }
+        String str = "ABCDEFGHIJKLNMOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        String s = "";
+        if(data==0)
+        {
+            return str.charAt(0)+"";
+        }
+        while(data > 0){
+            if(data < 52){
+                s = str.charAt((int)data) + s;
+                data = 0;
+            }else{
+                long r = data%52L;
+                s = str.charAt((int)r) + s;
+                data  = (data-r)/52;
+            }
+        }
+        return s;
+   }
 
 
     /**
