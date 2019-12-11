@@ -16,7 +16,7 @@ public class Server {
 
     public static void main(String args[]) throws IOException {
  
-        System.out.println("\n**** Distributed Password Breaker ****");
+        System.out.println("\n**** Distributed Password Cracker ****");
         System.out.println("**************** Server **************");
         hashPassword = generateARandomPasswordWithHash();
         System.out.println("Hash password: " + hashPassword);
@@ -56,7 +56,7 @@ public class Server {
 
 
     /**
-     * @return random password with md5 hash combining it with date 
+     * generate random password with md5 hash combining it with date 
      */
     public static String generateARandomPasswordWithHash() {
 
@@ -100,7 +100,7 @@ public class Server {
     
     
     /**
-     * this method is for getting system date. 
+     * this method is used for getting system date for hashing. 
     */
     public static String getSystemDate() {
 
@@ -115,9 +115,6 @@ public class Server {
     
     
     
-    /**
-     * this Thread class is used for handling multiple clients 
-     */
     public static class ClientServiceThread extends Thread{
         
         int noOfDataSent = 1, clientId = -1;
@@ -130,7 +127,7 @@ public class Server {
         }
         
      /**
-     * this method print client range and data packet in command prompt.
+     * print process range of client.
      * @param noOfDataSent 
      * @param clientId
      */
@@ -181,7 +178,6 @@ public class Server {
                     if (receiveMsg.equals("success")) {
                         System.out.println("Client_" + clientId + " successfully crack the password");
 						while (true) {}
-                        //break;
                     }
                     noOfDataSent++;
                 }
@@ -190,7 +186,6 @@ public class Server {
                 brIN.close();
                 psOUT.close();
                 System.out.println("Connection lost from client_" + clientId);
-
             } catch (IOException ex) {
 
             }
