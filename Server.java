@@ -128,8 +128,6 @@ public class Server {
         
      /**
      * print process range of client.
-     * @param noOfDataSent 
-     * @param clientId
      */
         void printIntoSystem(int noOfDataSent, int clientId) {
             
