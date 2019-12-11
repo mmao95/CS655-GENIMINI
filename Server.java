@@ -165,7 +165,7 @@ public class Server {
         public void run() {
             try {
                 BufferedReader brIN = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-                PrintStream psOUT = new PrintStream(clientSocket.getOutputStream());   //for writing
+                PrintStream psOUT = new PrintStream(clientSocket.getOutputStream());
 
                 while (noOfDataSent <= 4) {
                     sendMsg = (++range) + "\n" + hashPassword;
@@ -175,7 +175,7 @@ public class Server {
                     receiveMsg = brIN.readLine();
                     if (receiveMsg.equals("success")) {
                         System.out.println("Client_" + clientId + " successfully crack the password");
-						while (true) {}
+			while (true) {}
                     }
                     noOfDataSent++;
                 }
